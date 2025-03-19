@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Tektur", sans-serif;
+    background: #080808;
+}
+#content {
+    width: 80%;
+    margin: auto;
+}
+header {
+    display: flex;
+    border: 1px solid black;
+    gap: 10em;
+    overflow: hidden;
+    background: #1B1B1B;
+    justify-content: center;
+
+    & h1 {
+        color: white;
+        transform: translateX(60px);
+    }
+    & ul {
+        transform: translateY(30px);
+    }
+    & li {
+        font-size: x-large;
+        display: inline;
+        margin: 50px;
+    }
+    & li:hover {
+        color: #fff;
+        text-shadow: 0 0 10px #b1ad9f;
+    }
+    & a {
+        text-decoration: none;
+        color: grey;
+    }
+    & #Instagram {
+        border-radius: 50%;
+        width: 50px;
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
+    & #xicon {
+        width: 100px;
+        transform: translateY(6px);
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
+    & #discord {
+        border-radius: 50%;
+        width: 50px;
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
+    & #Instagram:hover {
+        transform: scale(1.2);
+        filter: brightness(1.5);
+    }
+    & #xicon:hover {
+        transform: scale(1.2);
+        filter: brightness(1.5);
+    }
+    & #discord:hover {
+        transform: scale(1.2);
+        filter: brightness(1.5);
+    }
+}
+main {
+    & h1 {
+        color: white;
+        text-shadow: 0 0 5px #b1ad9f;
+    }
+}
+@media screen and (max-width: 1440px) {
+    header {
+        gap: 0em;
+        width: 90%;
+    }
+    #links {
+        width: 584px;
+        
+    }
+    header h1 {
+        font-size: 2em;
+        transform: translateX(30px);
+    }
+    header ul {
+        transform: translateY(20px);
+    }
+    #socials {
+        margin-left: 100px;
+    }
+    header li {
+        font-size: large;
+        margin: 25px;
+    }
+    #Instagram, #discord {
+        width: 45px;
+    }
+    #xicon {
+        width: 90px;
+        transform: translateY(3px);
+    }
+    #discord {
+        margin-left: 35px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        width: 100%;
+        padding: 10px 0;
+    }
+    header h1 {
+        font-size: 1.8em;
+        transform: translateX(0);
+    }
+    header ul {
+        transform: translateY(10px);
+        text-align: center;
+    }
+    header li {
+        font-size: large;
+        margin: 20px;
+        display: block;
+    }
+    header a {
+        font-size: 1em;
+    }
+    #Instagram, #xicon, #discord {
+        width: 40px;
+    }
+    #xicon {
+        width: 80px;
+        transform: translateY(0);
+    }
+    #discord {
+        transform: translateX(0px);
+    }
+}
